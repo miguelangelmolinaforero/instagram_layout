@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(214, 211, 211);
+}
+
+.logo img {
+    margin-top: 7px;
+}
+
+.search {
+    width: 80px;
+    padding: 3px 30px;
+    padding-left: 60px;
+    color: rgb(214, 211, 211);
+    background: #f7f7f7;
+    border: 1px solid;
+    border-radius: 3px;
+    /* background-image: url('images/home.png');
+    background-size: 20px;
+    background-repeat: no-repeat; */
+}
+
+.option-container {
+    display: flex;
+}
+
+.image-container {
+    margin: 20px;
+}
+
+.images {
+    width: 25px;
+    height: 25px;
+}
+
+.profile-photo {
+    margin: 0;
+    border-radius: 50%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+}
+
+.user-id,
+.user-stats {
+    display: flex;
+}
+
+.stat {
+    margin: 20px;
+    margin-left: 0;
+    /* border: 1px solid red; */
+}
+
+.user-id h1 {
+    font-weight: 100;
+    font-size: 27px;
+}
+
+.user-id h5 {
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+    background: rgb(4, 163, 255);
+    border: 1px solid;
+    padding: 0 30px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.user-stats h3 {
+    font-weight: 100;
+    font-size: 15px;
+    margin-bottom: 10px;
+    /* letter-spacing: 1px; */
+}
+
+h3 strong {
+    font-size: 17px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.stories-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(100px, 293px));
+    width: 30px;
+    gap: 28px;
+    text-align: center;
+}
+
+.story {
+    /* border: 1px solid red; */
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.story figure {
+    margin: 0;
+    padding: 2px;
+    border-radius: 50%;
+    color: rgb(214, 211, 211);
+}
+
+.story img {
+    border-radius: 50%;
+}
+
+.story h2 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 293px));
+    justify-content: center;
+    gap: 28px;
+}
+
+.post {
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.post-image {
+    margin: 0;
+}
+
+.post-image img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.post-overlay {
+    background: rgba(0, 0, 0, .4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.post:hover .post-overlay {
+    display: flex;
+}
+
+.post-likes,
+.post-comments {
+    width: 80px;
+    margin: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .post-list {
+        gap: 3px;
+    }
+}
